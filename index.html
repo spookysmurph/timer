@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Scaling 4</title>
+  <title>Scaling Debug Pomodoro Timer</title>
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css'>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap');
@@ -154,8 +154,10 @@
 <script>
   window.addEventListener('load', () => {
     const timerElement = document.querySelector('#timer');
+    console.log('Timer element before scaling:', timerElement);
     timerElement.style.transform = 'scale(0.75)';
     timerElement.style.transformOrigin = 'top left';
+    console.log('Timer element after scaling:', timerElement);
   });
 </script>
 </body>
