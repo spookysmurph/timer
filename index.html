@@ -2,127 +2,127 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Scaling - Pomodoro Timer</title>
+  <title>Scaling 3 - Pomodoro Timer</title>
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css'>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap');
 
     /* General */
     body {
-      font-family: 'Roboto Mono', monospace;
+      font-family: 'Roboto Mono', monospace !important;
       /* background-color: #D1C4E9; */
     }
 
     #root {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
     }
 
     button,
     button:active {
-      background-color: rgb(234,178,156);
-      border: none;
-      width: 42px;
-      height: 40px;
-      border-radius: 100%;
-      text-align: center;
-      box-shadow: 0.2em 0.2em rgb(194, 91, 44);
-      -webkit-box-shadow: 0.2em 0.2em rgb(194, 91, 44);
-      -moz-box-shadow: 0.2em 0.2em rgb(194, 91, 44);
+      background-color: rgb(234,178,156) !important;
+      border: none !important;
+      width: 42px !important;
+      height: 40px !important;
+      border-radius: 100% !important;
+      text-align: center !important;
+      box-shadow: 0.2em 0.2em rgb(194, 91, 44) !important;
+      -webkit-box-shadow: 0.2em 0.2em rgb(194, 91, 44) !important;
+      -moz-box-shadow: 0.2em 0.2em rgb(194, 91, 44) !important;
     }
 
     button:focus {
-      translate: 0.2em 0.2em;
-      box-shadow: 0.2em 0.2em rgb(194, 91, 44) inset;
-      -webkit-box-shadow: 0.2em 0.2em rgb(194, 91, 44) inset;
-      -moz-box-shadow: 0.2em 0.2em rgb(194, 91, 44) inset;
+      translate: 0.2em 0.2em !important;
+      box-shadow: 0.2em 0.2em rgb(194, 91, 44) inset !important;
+      -webkit-box-shadow: 0.2em 0.2em rgb(194, 91, 44) inset !important;
+      -moz-box-shadow: 0.2em 0.2em rgb(194, 91, 44) inset !important;
     }
 
     /* Clock Body */
     .clock-container {
-      background-color: rgb(240, 240, 190);
-      width: 350px;
-      border-radius: 20px;
-      padding: 30px;
-      box-shadow: 10px 10px sienna;
+      background-color: rgb(240, 240, 190) !important;
+      width: 350px !important;
+      border-radius: 20px !important;
+      padding: 30px !important;
+      box-shadow: 10px 10px sienna !important;
     }
 
     /* Display + Stop/Start/Reset Controls */
     #time-left {
-      font-size: 70px;
-      text-align: center;
-      background-color: rgb(150,180,175);
-      padding: 20px;
-      border-radius: 20px;
-      box-shadow: 3px 3px rgb(121, 145, 141) inset;
+      font-size: 70px !important;
+      text-align: center !important;
+      background-color: rgb(150,180,175) !important;
+      padding: 20px !important;
+      border-radius: 20px !important;
+      box-shadow: 3px 3px rgb(121, 145, 141) inset !important;
     }
 
     #display-controls {
-      margin: 10px 0;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-between;
+      margin: 10px 0 !important;
+      display: flex !important;
+      flex-direction: row !important;
+      align-items: center !important;
+      justify-content: space-between !important;
     }
 
     #timer-label {
-      font-size: 25px;
-      text-align: center;
-      padding-top: 2px;
-      background-color: rgb(150,180,175);
-      border-radius: 10px;
-      height: 40px;
-      flex: 2;
-      box-shadow: 3px 3px rgb(121, 145, 141) inset;
+      font-size: 25px !important;
+      text-align: center !important;
+      padding-top: 2px !important;
+      background-color: rgb(150,180,175) !important;
+      border-radius: 10px !important;
+      height: 40px !important;
+      flex: 2 !important;
+      box-shadow: 3px 3px rgb(121, 145, 141) inset !important;
     }
 
     #timer-ssr {
-      flex: 1;
-      margin-left: 30px;
-      display: flex;
-      justify-content: space-between;
-      flex-start: end;
+      flex: 1 !important;
+      margin-left: 30px !important;
+      display: flex !important;
+      justify-content: space-between !important;
+      flex-start: end !important;
     }
 
     /* Timer Length Controls */
     .length-container {
-      margin-top: 20px;
-      display: flex;
-      flex-direction: row;
+      margin-top: 20px !important;
+      display: flex !important;
+      flex-direction: row !important;
     }
 
     .inc-dec-btn-container {
-      margin: 0 auto;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      width: 140px;
-      height: 60px;
+      margin: 0 auto !important;
+      display: flex !important;
+      flex-direction: row !important;
+      justify-content: center !important;
+      width: 140px !important;
+      height: 60px !important;
     }
 
     .break-container,
     .session-container {
-      text-align: center;
-      border: 2px solid rgb(234,178,156);
-      padding: 10px;
-      border-radius: 10px;
-      width: 48%;
+      text-align: center !important;
+      border: 2px solid rgb(234,178,156) !important;
+      padding: 10px !important;
+      border-radius: 10px !important;
+      width: 48% !important;
     }
 
     .timer-length {
-      font-size: 2em;
+      font-size: 2em !important;
     }
 
     .break-container,
     .inc-arrow {
-      margin-right: 12px;
+      margin-right: 12px !important;
     }
 
     /* Scaling Wrapper */
     .scaling-wrapper {
-      transform: scale(0.3); /* 25% smaller */
-      transform-origin: top left; /* Ensures the scaling is applied from the top left corner */
+      transform: scale(0.5) !important; /* 50% smaller for testing */
+      transform-origin: top left !important; /* Ensures the scaling is applied from the top left corner */
     }
   </style>
 </head>
@@ -159,5 +159,11 @@
     </div>
 </div>
 <script type="module" src="./script.js"></script>
+<script>
+  // Ensure the scaling is applied after the initial render
+  window.addEventListener('load', () => {
+    document.querySelector('.scaling-wrapper').style.transform = 'scale(0.75)';
+  });
+</script>
 </body>
 </html>
