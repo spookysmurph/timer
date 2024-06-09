@@ -17,45 +17,45 @@ button,
 button:active {
   background-color: rgb(234,178,156);
   border: none;
-  width: 42px;
-  height: 40px;
+  width: 36px; /* 42px * 0.857 */
+  height: 34px; /* 40px * 0.857 */
   border-radius: 100%;
   text-align: center;
-  box-shadow: 0.2em 0.2em rgb(194, 91, 44);
-  -webkit-box-shadow: 0.2em 0.2em rgb(194, 91, 44);
-  -moz-box-shadow: 0.2em 0.2em rgb(194, 91, 44);
+  box-shadow: 0.171em 0.171em rgb(194, 91, 44); /* 0.2em * 0.857 */
+  -webkit-box-shadow: 0.171em 0.171em rgb(194, 91, 44);
+  -moz-box-shadow: 0.171em 0.171em rgb(194, 91, 44);
 }
 
 button:focus {
-  translate: 0.2em 0.2em;
-  box-shadow: 0.2em 0.2em rgb(194, 91, 44) inset;
-  -webkit-box-shadow: 0.2em 0.2em rgb(194, 91, 44) inset;
-  -moz-box-shadow: 0.2em 0.2em rgb(194, 91, 44) inset;
+  translate: 0.171em 0.171em; /* 0.2em * 0.857 */
+  box-shadow: 0.171em 0.171em rgb(194, 91, 44) inset;
+  -webkit-box-shadow: 0.171em 0.171em rgb(194, 91, 44) inset;
+  -moz-box-shadow: 0.171em 0.171em rgb(194, 91, 44) inset;
 }
 
 /* Clock Body */
 
 .clock-container {
   background-color: rgb(240, 240, 190); 
-  width: 350px;
-  border-radius: 20px;
-  padding: 30px;
-  box-shadow: 10px 10px sienna;
+  width: 300px; /* Match calendar width */
+  border-radius: 17.14px; /* 20px * 0.857 */
+  padding: 25.71px; /* 30px * 0.857 */
+  box-shadow: 8.57px 8.57px sienna; /* 10px * 0.857 */
 }
 
 /* Display + Stop/Start/Reset Controls */
 
 #time-left {
-  font-size: 70px;
+  font-size: 60px; /* 70px * 0.857 */
   text-align: center;
   background-color: rgb(150,180,175);
-  padding: 20px;
-  border-radius: 20px;
-  box-shadow: 3px 3px rgb(121, 145, 141) inset;
+  padding: 17.14px; /* 20px * 0.857 */
+  border-radius: 17.14px; /* 20px * 0.857 */
+  box-shadow: 2.57px 2.57px rgb(121, 145, 141) inset; /* 3px * 0.857 */
 }
 
 #display-controls {
-  margin: 10px 0;
+  margin: 8.57px 0; /* 10px * 0.857 */
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -63,19 +63,19 @@ button:focus {
 }
 
 #timer-label {
-  font-size: 25px;
+  font-size: 21.43px; /* 25px * 0.857 */
   text-align: center;
-  padding-top: 2px;
+  padding-top: 1.71px; /* 2px * 0.857 */
   background-color: rgb(150,180,175);
-  border-radius: 10px;
-  height: 40px;
+  border-radius: 8.57px; /* 10px * 0.857 */
+  height: 34.29px; /* 40px * 0.857 */
   flex: 2;
-  box-shadow: 3px 3px rgb(121, 145, 141) inset;
+  box-shadow: 2.57px 2.57px rgb(121, 145, 141) inset; /* 3px * 0.857 */
 }
 
 #timer-ssr {
   flex: 1;
-  margin-left: 30px;
+  margin-left: 25.71px; /* 30px * 0.857 */
   display: flex;
   justify-content: space-between;
   flex-start: end;
@@ -84,7 +84,7 @@ button:focus {
 /* Timer Length Controls */
 
 .length-container {
-  margin-top: 20px;
+  margin-top: 17.14px; /* 20px * 0.857 */
   display: flex;
   flex-direction: row;
 }
@@ -94,25 +94,24 @@ button:focus {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 140px;
-  height:60px;
+  width: 120px; /* 140px * 0.857 */
+  height: 51.43px; /* 60px * 0.857 */
 }
 
 .break-container, 
 .session-container {
   text-align: center;
-/*   display: inline-block; */
-  border: 2px solid rgb(234,178,156);
-  padding: 10px;
-  border-radius: 10px;
+  border: 1.71px solid rgb(234,178,156); /* 2px * 0.857 */
+  padding: 8.57px; /* 10px * 0.857 */
+  border-radius: 8.57px; /* 10px * 0.857 */
   width: 48%;
 }
 
 .timer-length {
-  font-size: 2em;
+  font-size: 1.71em; /* 2em * 0.857 */
 }
 
 .break-container,
 .inc-arrow {
-  margin-right: 12px;
+  margin-right: 10.29px; /* 12px * 0.857 */
 }
